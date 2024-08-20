@@ -1,4 +1,4 @@
-# home_reponsive_sample
+# home_responsive_sample
 
 A new Flutter project.
 
