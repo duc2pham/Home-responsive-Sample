@@ -1,0 +1,1 @@
+const double baseRatio = 16 / 9;

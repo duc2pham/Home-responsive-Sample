@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:home_reponsive_sample/widgets/responsive/screen_extension.dart';
+import 'package:home_responsive_sample/widgets/responsive/screen_extension.dart';
 
-import '../widgets/responsive/reponsive_horizontal_list.dart';
+import '../widgets/responsive/responsive_horizontal_list.dart';
 
 class MainMenuPage extends StatelessWidget {
   const MainMenuPage({super.key});

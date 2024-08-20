@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:home_reponsive_sample/widgets/responsive/screen_extension.dart';
+import 'package:home_responsive_sample/widgets/responsive/screen_extension.dart';
 
-const double baseRatio = 16 / 9;
+import '../../constant.dart';
 
 class ResponsiveHorizontalList extends StatelessWidget {
   const ResponsiveHorizontalList({
@@ -32,8 +32,9 @@ class ResponsiveHorizontalList extends StatelessWidget {
         double itemHeight = baseHeight / scalingFactor;
         double itemMargin = baseItemMargin / scalingFactor;
 
-        debugPrint(
-            'scaling Factor: $scalingFactor');
+        debugPrint('screen size: ${context.screenWidth}, ${context.screenHeight}');
+        debugPrint('scaling Factor: $scalingFactor');
+        debugPrint('item size: ${itemWidth}, $itemHeight');
 
         return SizedBox(
           height: itemHeight,
