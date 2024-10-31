@@ -32,10 +32,6 @@ class ResponsiveHorizontalList extends StatelessWidget {
         double itemHeight = baseHeight / scalingFactor;
         double itemMargin = baseItemMargin / scalingFactor;
 
-        debugPrint('screen size: ${context.screenWidth}, ${context.screenHeight}');
-        debugPrint('scaling Factor: $scalingFactor');
-        debugPrint('item size: ${itemWidth}, $itemHeight');
-
         return SizedBox(
           height: itemHeight,
           child: ListView.separated(

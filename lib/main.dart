@@ -5,6 +5,7 @@ import 'package:home_responsive_sample/scenario/main_menu_page_type_b.dart';
 
 import 'scenario/home_page.dart';
 import 'scenario/main_menu_page.dart';
+import 'scenario/media_player_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -72,7 +73,14 @@ class LandingPage extends StatelessWidget {
                   .push(MaterialPageRoute(builder: (_) => MainMenuPageTypeB()));
             },
             child: Text('Main Menu Page Type B'),
-          )
+          ),
+              OutlinedButton(
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (_) => MediaPlayerPage()));
+                },
+                child: Text('Media Player'),
+              )
         ]),
       ),
     );
